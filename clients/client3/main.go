@@ -37,7 +37,7 @@ func main() {
 		region.Close()
 
 		if len(numbers) > 0 {
-			log.Println("Median is", Mode(numbers))
+			log.Println("Mode is", Mode(numbers))
 			object.Close()
 			object, err = shm.NewWindowsNativeMemoryObject("shm", os.O_CREATE|os.O_RDWR, 1024)
 			if err != nil {
